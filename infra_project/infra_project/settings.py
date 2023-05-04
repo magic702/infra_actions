@@ -1,12 +1,17 @@
 import os
 
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 SECRET_KEY = 'k9gwcfq01xszx2(_4e#gc3u$rt=)y6ivx=$wt+5&-^ktk4dg4e'
 
+
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
+
 
 INSTALLED_APPS = [
     'infra_app.apps.InfraAppConfig',
@@ -18,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -28,7 +34,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
 ROOT_URLCONF = 'infra_project.urls'
+
 
 TEMPLATES = [
     {
@@ -46,7 +54,9 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'infra_project.wsgi.application'
+
 
 DATABASES = {
     'default': {
@@ -54,6 +64,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -70,14 +81,20 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
 LANGUAGE_CODE = 'en-us'
+
 
 TIME_ZONE = 'UTC'
 
+
 USE_I18N = True
+
 
 USE_L10N = True
 
+
 USE_TZ = True
+
 
 STATIC_URL = '/static/'
